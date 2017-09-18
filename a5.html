@@ -1,0 +1,26 @@
+<script src="jquery-3.2.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#b1").click(function(){
+            var msg="";
+            $("p").each(function(){
+                msg += $(this).html() + "<br>"; 
+            });
+            $("#span1").html(msg) ; 
+        });
+    });
+
+</script> 
+
+
+
+
+
+<button id="b1"> Get all paras content </button> 
+<p> This is para 1 , contains about city info </p> 
+<div> This is div 1 , contains about city info </div> 
+<p> This is para 2 , contains about city info </p> 
+<div> This is div 2 , contains about city info </div> 
+<p> This is para 3 , contains about city info </p> 
+<br> 
+<span id="span1"></span> 

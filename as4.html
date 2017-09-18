@@ -1,0 +1,15 @@
+<script src="jquery-3.2.1.min.js"></script>
+<center><h1> Jquery Mouse Events </h1></center> 
+<script> 
+        $(document).ready(function(){
+            $("#txt1").mouseover(function(){
+                $("#div1").html("Enter your name");
+            }); 
+            $("#txt1").mouseout(function(){
+                $("#div1").html("");
+            });
+        });
+    </script> 
+<input type="text" id="txt1" name="txt1" /> 
+<div id="div1" > </div> 
+

@@ -1,0 +1,15 @@
+<script src="jquery-3.2.1.min.js"></script> 
+<script>
+    $(document).ready(function(){
+        $("#t1").on("keyup",function(){
+            $("#span1").html(this.value);
+        })
+
+    });
+       
+</script>
+
+
+<h2> Data Binding </h2> 
+<input type="text" id="t1"> 
+<span id="span1"></span>

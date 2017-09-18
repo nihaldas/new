@@ -1,0 +1,18 @@
+<script src="jquery-3.2.1.min.js"></script> 
+<script>
+    $(document).read(function(){
+        $("#ddl1").change(function(){
+            $("#span1").html("ddl1.options[ddl1.selectedIndex].value"); 
+        });
+    });
+
+</script> 
+
+Choose Product <select id="ddl1">
+    <option>Iphone</option>
+    <option>Ipad</option>
+    <option>Ipod</option>
+    <option>Iaccessories</option>
+    </select>
+
+<span id="span1"></span> 

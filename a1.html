@@ -1,0 +1,71 @@
+<script src="jquery-3.2.1.min.js"></script> 
+
+<script>
+    
+    $(document).ready(function f1(){
+        alert("Hello from jquery");
+    }); 
+
+    $(document).ready(function(){
+        //$("div").hide();
+        $("#div1").hide();
+    });
+
+    $(document).ready(function(){
+        $("#span1").html("Hello from jQuery");
+    });
+
+    $(document).ready(function(){
+        //$("#t1").val("Hi jQuery");
+        var d = new Date(); 
+        $("#t1").val(d.getDate() +"/"+(d.getMonth()+1) +"/"+d.getFullYear()); 
+        $("#t2").val(d.getHours()+":"+d.getMinutes()+":"+d.getSeconds());
+        
+    });
+
+    $(document).ready(function(){
+       /* $("#b1").click(function(){
+            $("#span2").html("First Button Clicked");
+        });
+        $("#b2").click(function(){
+            $("#span2").html("Second Button Clicked");
+        });*/
+
+        $("#b1,#b2").click(function(){
+            $("#span2").html(this.value + " button clicked");
+        });
+    });
+
+</script>
+
+<h1>JQuery</h1> 
+
+<!-- types of function definition --> 
+<!-- Asynchronous implementation , jquery (ajax,xml)
+$(selector).action(); 
+or 
+jquery(selector).action();
+eg. 
+    jquery(document).action(f1()); 
+
+    by tag name : $("div1") , $("p") 
+    by class name : $()
+-->
+
+<h1> jQuery Example-2 </h1> 
+<div id="div1"> This is division 1 </div> 
+<p> This is paragraph 1 </p> 
+<div id="div2"> This is division 2 </div> 
+<p> This is paragraph 2</p> 
+<div id="div3"> This is division 3 </div> 
+<p> This is paragraph 3 </p> 
+
+<span id="span1"></span> 
+<hr>
+<input type="text" id="t1"> 
+<input type="text" id="t2">
+<input type="button" id="b1" value="First Button">
+
+<input type="button" id="b2" value="Second Button">
+<hr> 
+<span id="span2"></span>
